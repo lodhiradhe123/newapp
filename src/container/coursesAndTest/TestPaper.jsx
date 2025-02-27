@@ -16,7 +16,7 @@ const questions = [
     id: 2,
     question: "Identify the shape shown below.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3f/Triangle_illustration.png",
+      "https://plus.unsplash.com/premium_photo-1731621422035-ac4a381ba910?q=80&w=3988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     type: "single",
     options: ["Square", "Triangle", "Circle", "Hexagon"],
     correct: "Triangle",
@@ -133,13 +133,13 @@ export default function TestPaper() {
           expanded ? "w-1/3" : "w-16"
         }`}
       >
-        <div className="flex justify-between items-center">
+        <div className="flex justify-center items-center">
           <h3 className="text-lg font-bold text-gray-800">Options</h3>
           <button
             onClick={() => setExpanded(!expanded)}
             className="text-gray-600"
           >
-            {expanded ? <FaCompress size={20} /> : <FaExpand size={20} />}
+            {expanded ? <FaCompress size={20} /> : <FaExpand size={20} />}radhe
           </button>
         </div>
 
@@ -213,7 +213,7 @@ export default function TestPaper() {
       )}
 
       {/* Navigation Buttons */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-4">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4">
         <button
           disabled={currentQuestion === 0}
           onClick={() => setCurrentQuestion((prev) => prev - 1)}

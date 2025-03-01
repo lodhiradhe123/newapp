@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Navbar from "../navbar/Nav";
+import TestPaperNavbar from "../navbar/TestPaperNavbar";
 
 export default function Login() {
   const [enrollment, setEnrollment] = useState("");
@@ -16,7 +16,7 @@ export default function Login() {
 
   return (
     <>
-      <Navbar />
+      <TestPaperNavbar />
       <div
         className="flex h-screen items-center justify-center bg-cover bg-center px-6 bg-gradient-to-br from-gray-100 to-yellow-100"
         // style={{
@@ -27,7 +27,7 @@ export default function Login() {
         {/* Container for both sections */}
 
         {/* Right Side - Login Form */}
-        <div className="w-96 p-10 bg-[#FBF8EF] rounded-2xl">
+        <div className="w-96 p-10 bg-white rounded-2xl">
           <h2 className="text-2xl font-bold text-gray-800 text-center">
             Login to Continue
           </h2>

@@ -30,11 +30,11 @@ function App() {
         {isAuthenticated && (
           <>
             <Route path="/profile" element={<UserProfile />} />
-            <Route path="/learningDashboard" element={<LearningDashboard />} />
-            <Route path="/testPaper" element={<TestPaper />} />
-            <Route path="/studentForm" element={<StudentForm />} />
           </>
         )}
+        <Route path="/learningDashboard" element={<LearningDashboard />} />
+        <Route path="/testPaper" element={<TestPaper />} />
+        <Route path="/studentForm" element={<StudentForm />} />
       </Routes>
     </>
   );

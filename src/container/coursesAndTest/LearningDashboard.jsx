@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaBell, FaUserCircle } from "react-icons/fa";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
-import Navbar from "../../components/navbar/Nav";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../../components/navbar/Nav";
 
 export default function LearningDashboard() {
   const [expandedCourse, setExpandedCourse] = useState(null);
@@ -55,7 +55,7 @@ export default function LearningDashboard() {
           </div>
           <div
             onClick={handleTest}
-            className=" w-full text-center text-xs font-bold text-gray-600 px-2 py-3 bg-blue-100 rounded-lg"
+            className=" w-full text-center text-xs font-bold text-gray-600 px-2 py-3 bg-blue-100 rounded-lg cursor-pointer"
           >
             Tests
           </div>

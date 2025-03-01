@@ -27,7 +27,7 @@ function Navbar() {
         {/* Left Side - Brand & Profile */}
         <div className="flex items-center gap-3 ">
           <Link to="/" className="text-xl font-bold text-gray-800">
-            Indew
+            Code Canvas
           </Link>
 
           {/* Profile Dropdown */}

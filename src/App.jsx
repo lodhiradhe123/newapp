@@ -8,6 +8,7 @@ import UserProfile from "./components/profile/Profile";
 import Content from "./container/content/Content";
 import LearningDashboard from "./container/coursesAndTest/LearningDashboard";
 import TestPaper from "./container/coursesAndTest/TestPaper";
+import StudentForm from "../src/components/login/StundentForm";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -31,6 +32,7 @@ function App() {
             <Route path="/profile" element={<UserProfile />} />
             <Route path="/learningDashboard" element={<LearningDashboard />} />
             <Route path="/testPaper" element={<TestPaper />} />
+            <Route path="/studentForm" element={<StudentForm />} />
           </>
         )}
       </Routes>
